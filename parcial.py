@@ -29,6 +29,7 @@ while (opcion != 5):
         buscarCodigo = input('Digita el codigo a buscar: ')
         for producto in productos:
             if (producto['codigo'] == buscarCodigo):
+                # Editar registro de la lista
                 producto['precio'] = input('Digite el nuevo precio: ')
                 bandera = True
                 break
@@ -40,6 +41,7 @@ while (opcion != 5):
         buscarCodigo = input('Digita el codigo a buscar: ')
         for producto in productos:
             if (producto['codigo'] == buscarCodigo):
+                # Borrar registro de la lista
                 productos.remove(producto)
                 bandera = True
                 break
